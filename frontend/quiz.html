@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Quizzes - ProperLink</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Discover Your Dream Home</h1>
+            <p>Take our quizzes to help narrow down your preferences and find the perfect property.</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="login.html" class="nav-link">Login</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h2>Interactive Quizzes for Buyers</h2>
+            <p>Our quizzes are designed to help you and your agent understand your preferences, making the buying process easier and more efficient. Select a quiz below to get started:</p>
+
+            <div id="quiz-list" class="quiz-list">
+                <!-- Show quizzes only if the user is logged in -->
+                <script>
+                    // Simulate user login status
+                    const isLoggedIn = true; // Replace this with actual login check from your backend
+
+                    if (isLoggedIn) {
+                        document.getElementById('quiz-list').innerHTML = `
+                            <div class="quiz-card">
+                                <h3>Location Preferences Quiz</h3>
+                                <p>What kind of neighborhood suits your lifestyle? This quiz will help you identify the ideal locations for your dream home.</p>
+                                <button onclick="location.href='location-quiz.html';" class="quiz-button">Take the Quiz</button>
+                            </div>
+                            <div class="quiz-card">
+                                <h3>Budget Planning Quiz</h3>
+                                <p>Determine your budget and financial goals for your new home. This quiz will guide you through the numbers.</p>
+                                <button onclick="location.href='budget-quiz.html';" class="quiz-button">Take the Quiz</button>
+                            </div>
+                            <div class="quiz-card">
+                                <h3>Home Features Quiz</h3>
+                                <p>Do you prefer a modern kitchen, large backyard, or open-concept layout? This quiz will help narrow down your must-have features.</p>
+                                <button onclick="location.href='features-quiz.html';" class="quiz-button">Take the Quiz</button>
+                            </div>
+                        `;
+                    } else {
+                        document.getElementById('quiz-list').innerHTML = `
+                            <p>Please <a href="login.html">log in</a> to access our interactive quizzes.</p>
+                        `;
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ProperLink. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
