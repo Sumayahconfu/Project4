@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Preferences Quiz - ProperLink</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="quizzes.css">
+    <style>
+        body {
+            background: url('images/background-location.jpg') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Location Preferences Quiz</h1>
+        <p>Discover the perfect locations that suit your lifestyle.</p>
+    </header>
+
+    <main class="quiz-container">
+        <form action="#">
+            <div class="quiz-question">
+                <h3>What type of area do you prefer?</h3>
+                <label><input type="radio" name="area" value="urban"> Urban</label>
+                <label><input type="radio" name="area" value="suburban"> Suburban</label>
+                <label><input type="radio" name="area" value="rural"> Rural</label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>How close do you want to be to work or school?</h3>
+                <label><input type="radio" name="distance" value="close"> Very Close</label>
+                <label><input type="radio" name="distance" value="moderate"> Moderate</label>
+                <label><input type="radio" name="distance" value="doesn't matter"> Doesn't Matter</label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>What’s the most important amenity nearby?</h3>
+                <label><input type="radio" name="amenity" value="parks"> Parks & Recreation</label>
+                <label><input type="radio" name="amenity" value="shopping"> Shopping Centers</label>
+                <label><input type="radio" name="amenity" value="schools"> Schools</label>
+            </div>
+
+            <button type="submit" class="quiz-submit">Submit Quiz</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 ProperLink. All rights reserved.</p>
+    </footer>
+</body>
+</html>
